@@ -13,6 +13,9 @@ nodejs 10.6.3
 
 手机打开使用效果更佳
 
+效果图
+![效果图](https://user-images.githubusercontent.com/23744602/77142573-80c45300-6abb-11ea-9879-442742dabd50.png)
+
 ## How to run
 
 #### 1、下载项目
