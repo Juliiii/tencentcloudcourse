@@ -1,5 +1,5 @@
 $(function() {
-  var addHatButtonDefaultText = "Generating a Christmas hat";
+  var addHatButtonDefaultText = "Wear A Mask";
   var submitting = false;
   $(".addHat-button").on("click", function() {
     var finalImg = $("#finalImg");
