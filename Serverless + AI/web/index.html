@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WearMask</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://cdn.bootcss.com/cropper/4.0.0/cropper.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.bootcss.com/jquery-toast-plugin/1.3.2/jquery.toast.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-background-image"></div>
+    <div class="body">
+      <input
+        class="image-upload-input"
+        type="file"
+        name="image"
+        accept="image/*"
+      />
+      <div class="image">
+        <img id="finalImg" />
+        <svg
+          t="1584631150749"
+          class="image-upload-icon"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="2225"
+          width="120"
+          height="120"
+        >
+          <path
+            d="M896 972.8l-819.2 0c-42.3424 0-76.8-34.4576-76.8-76.8l0-102.4c0-14.1312 11.4688-25.6 25.6-25.6s25.6 11.4688 25.6 25.6l0 102.4c0 14.1312 11.4688 25.6 25.6 25.6l819.2 0c14.1312 0 25.6-11.4688 25.6-25.6l0-102.4c0-14.1312 11.4688-25.6 25.6-25.6s25.6 11.4688 25.6 25.6l0 102.4c0 42.3424-34.4576 76.8-76.8 76.8z"
+            p-id="2226"
+            fill="#1296db"
+          ></path>
+          <path
+            d="M760.5248 442.6752l-256-256c-9.984-9.984-26.2144-9.984-36.1984 0l-256 256c-9.984 9.984-9.984 26.2144 0 36.1984s26.2144 9.984 36.1984 0l212.2752-212.2752 0 527.0016c0 14.1312 11.4688 25.6 25.6 25.6s25.6-11.4688 25.6-25.6l0-527.0016 212.2752 212.2752c5.0176 5.0176 11.5712 7.4752 18.1248 7.4752s13.1072-2.5088 18.1248-7.4752c9.984-9.984 9.984-26.2144 0-36.1984z"
+            p-id="2227"
+            fill="#1296db"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="button-container">
+        <button class="button addHat-button">
+          <i aria-label="图标: loading" class="hidden loading-icon"
+            ><svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              data-icon="loading"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"
+              ></path>
+            </svg>
+          </i>
+          <span class="addHat-button-text">Wear A Mask</span>
+        </button>
+      </div>
+    </div>
+
+    <div style="display: none" class="tailoring-container">
+      <div class="trailoring-mask"></div>
+      <div class="tailoring-content">
+        <img id="tailoringImg" />
+        <div class="tailoring-content-footer">
+          <button id="cancel-button">Cancel</button>
+
+          <button id="sure-button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/cropper/4.0.0/cropper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lrz@4.9.40/dist/lrz.all.bundle.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
+    <script src="env.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
